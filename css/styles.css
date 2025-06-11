@@ -4244,3 +4244,65 @@ img.u-pull-left {
         right : 6vw;
     }
 }
+
+
+
+
+
+
+/* Language Switcher - версия ПК */
+.language-switcher {
+    display: inline-block;
+    margin-left: 0px;
+    vertical-align: middle;
+}
+
+.language-switcher__flags {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.language-switcher__flags img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+/* Состояния флагов */
+.language-switcher__flags a:not(.active) img {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+.language-switcher__flags a.active img {
+    opacity: 1;
+}
+
+.language-switcher__flags a:hover img {
+    opacity: 0.7;
+}
+
+
+/* Language Switcher -Мобильная версия */
+@media screen and (max-width: 800px) {
+    .language-switcher {
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+
+}
+
+
+/* Language Switcher - версия ПК - выравнивание по правому краю (если нужно по левому, то удалить)*/
+@media screen and (min-width: 801px) {
+    .main-nav-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .language-switcher {
+        margin-left: auto;
+    }
+}

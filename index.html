@@ -35,9 +35,8 @@
 
 <body id="top">
 
-
-    <!-- # preloader
-    ================================================== -->
+    <!-- # preloader-
+    ================================================== -->    
     <div id="preloader">
         <div id="loader">
         </div>
@@ -62,24 +61,37 @@
         <header class="s-header">
 
             <div class="header-mobile">
-                <span class="mobile-home-link"><a href="index.html">Прядкина Е.В.</a></span>
+                <span class="mobile-home-link"><a href="index.html" data-i18n="name">Прядкина Е.В.</a></span>
                 <a class="mobile-menu-toggle" href="#0"><span>Меню</span></a>
             </div>
 
             <div class="row wide main-nav-wrap">
                 <nav class="column lg-12 main-nav">
                     <ul>
-                        <li><a href="index.html" class="home-link">Прядкина Е.В.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Интро</a></li>
-                        <li><a href="#about" class="smoothscroll">Обо мне</a></li>
-                        <li><a href="#experience" class="smoothscroll">Опыт работы</a></li>
-                        <li><a href="#works" class="smoothscroll">Портфолио</a></li>
-                        <li><a href="#education" class="smoothscroll">Образование</a></li>
-                        <li><a href="#contact" class="smoothscroll">Контакты</a></li>
+                        <li><a href="index.html" class="home-link" data-i18n="name">Прядкина Е.В.</a></li>
+                        <li class="current"><a href="#intro" class="smoothscroll" data-i18n="intro">Интро</a></li>
+                        <li><a href="#about" class="smoothscroll" data-i18n="aboutme">Обо мне</a></li>
+                        <li><a href="#experience" class="smoothscroll" data-i18n="experience">Опыт работы</a></li>
+                        <li><a href="#works" class="smoothscroll" data-i18n="works">Портфолио</a></li>
+                        <li><a href="#education" class="smoothscroll" data-i18n="education">Образование</a></li>
+                        <li><a href="#contact" class="smoothscroll" data-i18n="contact">Контакты</a></li>
                     </ul>
                 </nav>
-            </div>
 
+                    <!-- language-switcher -->
+                        <div class="language-switcher">
+                            <div class="language-switcher__flags">
+                                <a href="#" data-lang="ru" class="active">
+                                <img src="images/russia-flag.png" alt="RU" width="30" height="30">
+                                </a>
+                                <a href="#" data-lang="en">
+                                <img src="images/usa-flag.png" alt="EN" width="30" height="30">
+                                </a>
+                            </div>
+                        </div>
+                    <!-- language-switcher -->                                  
+                           
+            </div>
         </header> <!-- end s-header -->
 
 
@@ -95,11 +107,11 @@
                 <div class="row intro-content wide">
 
                     <div class="column">
-                        <div class="text-pretitle with-line">
+                        <div class="text-pretitle with-line"data-i18n="greeting">
                             Здравствуйте!
                         </div>
 
-                        <h1 class="text-huge-title">
+                        <h1 class="text-huge-title" data-i18n="title">
                             Я - Прядкина Екатерина <br>
                             Владимировна! <br>
                         </h1>
@@ -134,26 +146,26 @@
                     </div>
 
                     <div class="column lg-6 md-12" data-animate-el>
-                        <div class="about-info__text" >
+                        <div class="about-info__text">
 
-                            <h2 class="text-pretitle with-line" data-animate-el>
+                            <h2 class="text-pretitle with-line" data-animate-el data-i18n="aboutme">
                                 Обо мне
                             </h2>
                             <p class="attention-getter" data-animate-el>
                                 <ul>
-                                    <li>Профессионал, обладающий высоким уровнем аналитических навыков. На каждой должности активно внедряю автоматизацию бизнесс-процессов с целью оптимизации трудозатрат и финансовых затрат компании. </li>
+                                    <li data-i18n="aboutme__text__li__1">Профессионал, обладающий высоким уровнем аналитических навыков. На каждой должности активно внедряю автоматизацию бизнесс-процессов с целью оптимизации трудозатрат и финансовых затрат компании. </li>
                                     <br> 
-                                    <li>Обладаю высоким уровнем самоорганизации в работе, который позволяет мне эффективно управлять реализуемыми процессами. </li> 
+                                    <li data-i18n="aboutme__text__li__2">Обладаю высоким уровнем самоорганизации в работе, который позволяет мне эффективно управлять реализуемыми процессами. </li> 
                                     <br>
-                                    <li>Имею успешный опыт управления командой. Способна организовать работу отдела «с нуля» и добиться значительных показателей работы команды. </li>
+                                    <li data-i18n="aboutme__text__li__3">Имею успешный опыт управления командой. Способна организовать работу отдела «с нуля» и добиться значительных показателей работы команды. </li>
                                     <br>
-                                    <li>Обладаю навыками аргументации своей позиции и представления результатов перед высшим руководством и топ-менеджментом компании. </li>  
+                                    <li data-i18n="aboutme__text__li__4">Обладаю навыками аргументации своей позиции и представления результатов перед высшим руководством и топ-менеджментом компании. </li>  
                                     <br>                
-                                    <li>Прошла обучение MBA и независимую оценку квалификации по профессиональному стандарту «Управление организацией на занимаемой должности руководителя функционального подразделения», что подтверждает мой профессиональный уровень и готовность к исполнению руководящих обязанностей.  </li> 
+                                    <li data-i18n="aboutme__text__li__5">Прошла обучение MBA и независимую оценку квалификации по профессиональному стандарту «Управление организацией на занимаемой должности руководителя функционального подразделения», что подтверждает мой профессиональный уровень и готовность к исполнению руководящих обязанностей. </li> 
                                     <br> 
-                                    <li>Успешно взаимодействию с коллегами, проявляю инициативу в установлении контактов и легко нахожу контакт с разными командами. </li>                              
+                                    <li data-i18n="aboutme__text__li__6">Успешно взаимодействию с коллегами, проявляю инициативу в установлении контактов и легко нахожу контакт с разными командами. </li>                              
                                 </ul>
-                                <a href="https://drive.google.com/file/d/1ESnauqrOZWshFeNWXQSgpYwW2LUoV9aS/view?usp=sharing" class="btn btn--medium u-fullwidth" data-animate-el>Download portfolio</a>
+                                <a href="https://drive.google.com/file/d/1ESnauqrOZWshFeNWXQSgpYwW2LUoV9aS/view?usp=sharing" class="btn btn--medium u-fullwidth" data-animate-el data-i18n="aboutme__text__li__7">Скачать портфолио</a>
                             </p>
                                                     
                         </div>
@@ -164,7 +176,7 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Мои навыки в области работы с инженерными программными продуктами:</h2>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="skillsprogrammes__title">Мои навыки в области работы с инженерными программными продуктами:</h2>
 
                         <ul class="skills-list h1" data-animate-el>
                             <li>AutoCad</li>
@@ -173,9 +185,9 @@
                             <li>MS Excel</li>
                             <li>GrandSmeta</li>
                             <li>Project IMS</li>
-                            <li>СЭД МБ</li>
-                            <li>ЕОСДО</li>
-                            <li>ЕОС-Качество</li>
+                            <li data-i18n="skillsprogrammes__title__1">СЭД МБ</li>
+                            <li data-i18n="skillsprogrammes__title__2">ЕОСДО</li>
+                            <li data-i18n="skillsprogrammes__title__3">ЕОС-Качество</li>
 
                         </ul>
                     </div>
@@ -184,7 +196,7 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Мои навыки в области анализа данных и веб-разработки:</h2>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="skillsweb__title">Мои навыки в области анализа данных и веб-разработки:</h2>
 
                         <ul class="skills-list h1" data-animate-el>
                             <li>Power BI</li>
@@ -206,17 +218,17 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Мои технические навыки работы (Hard Skills):</h2>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="skillshard__title">Мои технические навыки работы (Hard Skills):</h2>
 
                         <ul class="skills-list h1" data-animate-el>
-                            <li>Разработка ППР и ТК</li>
-                            <li>Составление ИД</li>               
-                            <li>Входной контроль РД</li>
-                            <li>Составление графиков</li>
-                            <li>Строительный контроль</li>
-                            <li>Проведение аудитов</li>
-                            <li>Подготовка отчетности</li>
-                            <li>Деловая переписка</li>
+                            <li data-i18n="skillshard__title__li__1">Разработка ППР и ТК</li>
+                            <li data-i18n="skillshard__title__li__2">Составление ИД</li>               
+                            <li data-i18n="skillshard__title__li__3">Входной контроль РД</li>
+                            <li data-i18n="skillshard__title__li__4">Разработка графиков</li>
+                            <li data-i18n="skillshard__title__li__5">Строительный контроль</li>
+                            <li data-i18n="skillshard__title__li__6">Проведение аудитов</li>
+                            <li data-i18n="skillshard__title__li__7">Подготовка отчетности</li>
+                            <li data-i18n="skillshard__title__li__8">Деловая переписка</li>
                         </ul>
 
                     </div>
@@ -226,18 +238,18 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Мои универсальные навыки работы (Soft Skills):</h2>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="skillsoft__title">Мои универсальные навыки работы (Soft Skills):</h2>
 
                         <ul class="skills-list h1" data-animate-el>
-                            <li>Аналитическое мышление</li>
-                            <li>Лидерство</li>
-                            <li>Бизнес-коммуникации</li>               
-                            <li>Управление проектами</li>
-                            <li>Стратегическое мышление</li>
-                            <li>Анализ данных</li>
-                            <li>Управление персоналом</li>                           
-                            <li>Управление рисками</li>
-                            <li>Управление качеством</li>
+                            <li data-i18n="skillsoft__title__li__1">Аналитическое мышление</li>
+                            <li data-i18n="skillsoft__title__li__2">Лидерство</li>
+                            <li data-i18n="skillsoft__title__li__3">Бизнес-коммуникации</li>               
+                            <li data-i18n="skillsoft__title__li__4">Управление проектами</li>
+                            <li data-i18n="skillsoft__title__li__5">Стратегическое мышление</li>
+                            <li data-i18n="skillsoft__title__li__6">Анализ данных</li>
+                            <li data-i18n="skillsoft__title__li__7">Управление персоналом</li>                           
+                            <li data-i18n="skillsoft__title__li__8">Управление рисками</li>
+                            <li data-i18n="skillsoft__title__li__9">Управление качеством</li>
                         </ul>
                         <br> 
                         <br> 
@@ -254,7 +266,7 @@
 
                     <div class="column lg-6 tab-12">
 
-                        <h2 class="text-pretitle" data-animate-el>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="experience">
                             Опыт работы
                         </h2>
 
@@ -263,23 +275,23 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">1. ИД ГК РОСАТОМ (АО АСЭ)</h3>
-                                    <h4 class="timeline__meta">Генеральный подрядчик</h4>
-                                    <h4 class="timeline__meta">Проект: АЭС Руппур в НРБ</h4>
-                                    <h4 class="timeline__meta">Отдел по работе с несоответствиями</h4>
-                                    <h4 class="timeline__meta">Начальник отдела</h4>
-                                    <p class="timeline__timeframe">Июнь 2021 - Июнь 2023</p>
+                                    <h3 class="timeline__title" data-i18n="experience__title__rosatom__2021">1. ИД ГК РОСАТОМ (АО АСЭ)</h3>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2021__1">Генеральный подрядчик</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2021__2">Проект: АЭС Руппур в НРБ</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2021__3">Отдел по работе с несоответствиями</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2021__4">Начальник отдела</h4>
+                                    <p class="timeline__timeframe" data-i18n="experience__timeframe__rosatom__2021">Июнь 2021 - Июнь 2023</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>
+                                    <p data-i18n="experience__accomplishments">
                                         Достижения в работе:
                                         <ol>
-                                            <li>В условиях неукомплектованности успешно организовала отдел и руководила его работой, обеспечив эффективное выполнение поставленных задач.</li>
-                                            <li>Организовала взаимодействие с Проектировщиками, Поставщиками и Субподрядными организациями, что сократило время рассмотрения направляемых несоответствий в 3 раза.</li> 
-                                            <li>Внедрила систему ежедневного мониторинга несоответствий, что привело к росту ФКПЭ по работе с несоответствиями с 34% до 87%.</li>
-                                            <li>Провела анализ договоров и инициировала заключение доп.соглашений по работе с несоответствиями, что предоставило организации право инициировать претензионно-исковую работу в отношении подрядных организаций.</li>
-                                            <li>Разработала дорожную карту и провела организационные мероприятия по ней, что позволило в срок ввести в промышленную эксплуатацию систему "ЕОС-Качество".</li>
-                                            <li>Организовала обучение сотрудников, в результате чего процент успешно сдавших экзамен по методологии 8D и работе в системе "ЕОС-Качество" вырос с 15% до 96%.</li> 
+                                            <li data-i18n="experience__accomplishments__rosatom__2021__1">В условиях неукомплектованности успешно организовала отдел и руководила его работой, обеспечив эффективное выполнение поставленных задач.</li>
+                                            <li data-i18n="experience__accomplishments__rosatom__2021__2">Организовала взаимодействие с Проектировщиками, Поставщиками и Субподрядными организациями, что сократило время рассмотрения направляемых несоответствий в 3 раза.</li> 
+                                            <li data-i18n="experience__accomplishments__rosatom__2021__3">Внедрила систему ежедневного мониторинга несоответствий, что привело к росту ФКПЭ по работе с несоответствиями с 34% до 87%.</li>
+                                            <li data-i18n="experience__accomplishments__rosatom__2021__4">Провела анализ договоров и инициировала заключение доп.соглашений по работе с несоответствиями, что предоставило организации право инициировать претензионно-исковую работу в отношении подрядных организаций.</li>
+                                            <li data-i18n="experience__accomplishments__rosatom__2021__5">Разработала дорожную карту и провела организационные мероприятия по ней, что позволило в срок ввести в промышленную эксплуатацию систему "ЕОС-Качество".</li>
+                                            <li data-i18n="experience__accomplishments__rosatom__2021__6">Организовала обучение сотрудников, в результате чего процент успешно сдавших экзамен по методологии 8D и работе в системе "ЕОС-Качество" вырос с 15% до 96%.</li> 
                                         </ol>
                                     </p>
                                 </div>
@@ -289,22 +301,22 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">2. ИД ГК РОСАТОМ (АО АСЭ)</h3>
-                                    <h4 class="timeline__meta">Генеральный подрядчик</h4>
-                                    <h4 class="timeline__meta">Проект: АЭС Руппур в НРБ</h4>
-                                    <h4 class="timeline__meta">Отдел технической инспекции</h4>
-                                    <h4 class="timeline__meta">Руководитель группы по работе с несоответствиями</h4>
-                                    <p class="timeline__timeframe">Июнь 2018 - Июнь 2021</p>
+                                    <h3 class="timeline__title" data-i18n="experience__title__rosatom__2018">2. ИД ГК РОСАТОМ (АО АСЭ)</h3>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2018__1">Генеральный подрядчик</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2018__2">Проект: АЭС Руппур в НРБ</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2018__3">Отдел технической инспекции</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__rosatom__2018__4">Руководитель группы по работе с несоответствиями</h4>
+                                    <p class="timeline__timeframe" data-i18n="experience__timeframe__rosatom__2018">Июнь 2018 - Июнь 2021</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>
+                                    <p data-i18n="experience__accomplishments">
                                         Достижения в работе:
                                         <ol>
-                                            <li>Разработала и успешно внедрила процедуры ИСМ, что способствовало эффективной организации бизнес-процессов в организации.</li> 
-                                            <li>Прошла проверку со стороны ГК РОСАТОМ по теме "Анализа эффективности управления проектом" без замечаний.</li> 
-                                            <li>Внедрила мониторинг работы с несоответствиями в форме системы статус-отчетов, что привело к увеличению процента закрытия несоответствий на 15%.</li> 
-                                            <li>Руководила работой группы по процессу "Управление несоответствиями".</li>
-                                            <li>В отсутствие начальника отдела технической инспекции (ОТИ) успешно исполняла его обязанности как замещающее лицо, обеспечивая эффективное функционирование отдела.</li>
+                                            <li data-i18n="experience__accomplishments__rosatom__2018__1">Разработала и успешно внедрила процедуры ИСМ, что способствовало эффективной организации бизнес-процессов в организации.</li> 
+                                            <li data-i18n="experience__accomplishments__rosatom__2018__2">Прошла проверку со стороны ГК РОСАТОМ по теме "Анализа эффективности управления проектом" без замечаний.</li> 
+                                            <li data-i18n="experience__accomplishments__rosatom__2018__3">Внедрила мониторинг работы с несоответствиями в форме системы статус-отчетов, что привело к увеличению процента закрытия несоответствий на 15%.</li> 
+                                            <li data-i18n="experience__accomplishments__rosatom__2018__4">Руководила работой группы по процессу "Управление несоответствиями".</li>
+                                            <li data-i18n="experience__accomplishments__rosatom__2018__5">В отсутствие начальника отдела технической инспекции (ОТИ) успешно исполняла его обязанности как замещающее лицо, обеспечивая эффективное функционирование отдела.</li>
                                         </ol>
                                     </p>     
                                 </div>
@@ -318,7 +330,7 @@
 
                     <div class="column lg-6 tab-12">
 
-                        <h2 class="text-pretitle" data-animate-el>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="experience">
                             Опыт работы
                         </h2>
 
@@ -327,19 +339,19 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">3. ИНЖЕНЕРНЫЙ ЦЕНТР ПРОМЫШЛЕННЫХ КОНСТРУКЦИЙ И БЕТОНОВ (ООО "ИЦПКБ")</h3>
-                                    <h4 class="timeline__meta">Проектная организация</h4>
-                                    <h4 class="timeline__meta">Проект: АЭС Руппур в НРБ</h4>
-                                    <h4 class="timeline__meta">Отдел авторского надзора</h4>
-                                    <h4 class="timeline__meta">Ведущий инженер</h4>
-                                    <p class="timeline__timeframe">Июнь 2017 - Январь 2018</p>
+                                    <h3 class="timeline__title" data-i18n="experience__title__icpkb__2017">3. ИНЖЕНЕРНЫЙ ЦЕНТР ПРОМЫШЛЕННЫХ КОНСТРУКЦИЙ И БЕТОНОВ (ООО "ИЦПКБ")</h3>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__icpkb__2017__1">Проектная организация</h4>
+                                    <h4 class="timeline__meta" data-i18n=" experience__meta__icpkb__2017__2">Проект: АЭС Руппур в НРБ</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__icpkb__2017__3">Отдел авторского надзора</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__icpkb__2017__4">Ведущий инженер</h4>
+                                    <p class="timeline__timeframe" data-i18n="experience__timeframe__icpkb__2017">Июнь 2017 - Январь 2018</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>
+                                    <p data-i18n="experience__accomplishments">
                                         Достижения в работе:
                                         <ol>
-                                            <li>Организовала ежедневные конъюнктурные обходы площадки, обеспечив контроль и своевременное выполнение строительно-монтажных работ в соответствии с установленным графиком.</li>
-                                            <li>Осуществляла эффективный контроль процесса укрепления грунтов, что гарантировало соответствие выполненных работ требованиям рабочей документации и обеспечило успешное выполнение ключевого события – укладка первого бетона на объектах 10UJA «Реакторное здание» и 20UJA «Реакторное здание» в соответствии с установленным графиком.</li> 
+                                            <li data-i18n="experience__accomplishments__icpkb__2017__1">Организовала ежедневные конъюнктурные обходы площадки, обеспечив контроль и своевременное выполнение строительно-монтажных работ в соответствии с установленным графиком.</li>
+                                            <li data-i18n="experience__accomplishments__icpkb__2017__2">Осуществляла эффективный контроль процесса укрепления грунтов, что гарантировало соответствие выполненных работ требованиям рабочей документации и обеспечило успешное выполнение ключевого события – укладка первого бетона на объектах 10UJA «Реакторное здание» и 20UJA «Реакторное здание» в соответствии с установленным графиком.</li> 
                                         </ol>
                                     </p>    
                                 </div>
@@ -348,21 +360,21 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">4. ООО "Монтажспецстрой"</h3>
-                                    <h4 class="timeline__meta">Подрядчик</h4>
-                                    <h4 class="timeline__meta">Проект: Ростовская АЭС</h4>
-                                    <h4 class="timeline__meta">Производственно-технический отдел</h4>
-                                    <h4 class="timeline__meta">Ведущий инженер</h4>
-                                    <p class="timeline__timeframe">Сентябрь 2011 - Июнь 2017</p>
+                                    <h3 class="timeline__title" data-i18n="experience__title__mss__2011">4. ООО "Монтажспецстрой"</h3>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__mss__2011__1">Подрядчик</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__mss__2011__2">Проект: Ростовская АЭС</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__mss__2011__3">Производственно-технический отдел</h4>
+                                    <h4 class="timeline__meta" data-i18n="experience__meta__mss__2011__4">Ведущий инженер</h4>
+                                    <p class="timeline__timeframe" data-i18n="experience__timeframe__mss__2011__1">Сентябрь 2011 - Июнь 2017</p>
                                 </div>
                                 <div class="timeline__desc">
-                                    <p>
+                                    <p data-i18n="experience__accomplishments">
                                         Достижения в работе:
                                         <ol>
-                                            <li>На базе MS Excel внедрила автоматизацию процессов составления заявок на материалы и ведения лимитно-заборных карт. Это обеспечило контроль за движением материалов, возможность формирования управленческой отчетности и сократило время составления заявок на 20%.</li> 
-                                            <li>Разработала стандарт предприятия по разработке и согласованию ППР, установив требования к их составу, содержанию, порядку и срокам разработки. Это сократило время согласования ППР на 30% и повысило их качество (проверки в надзорных органах без замечаний).</li> 
-                                            <li>Использовала организационно-технологические расчеты и риск-ориентированный подход при разработке ППР, что позволило минимизировать накладные расходы организации и сроки выполнения строительно-монтажных работ.</li> 
-                                            <li>Неоднократно была награждена грамотами руководства организации за высокие достижения и значительный вклад в развитие строительной отрасли.</li>
+                                            <li data-i18n="experience__accomplishments__mss__2011__1">На базе MS Excel внедрила автоматизацию процессов составления заявок на материалы и ведения лимитно-заборных карт. Это обеспечило контроль за движением материалов, возможность формирования управленческой отчетности и сократило время составления заявок на 20%.</li> 
+                                            <li data-i18n="experience__accomplishments__mss__2011__2">Разработала стандарт предприятия по разработке и согласованию ППР, установив требования к их составу, содержанию, порядку и срокам разработки. Это сократило время согласования ППР на 30% и повысило их качество (проверки в надзорных органах без замечаний).</li> 
+                                            <li data-i18n="experience__accomplishments__mss__2011__3">Использовала организационно-технологические расчеты и риск-ориентированный подход при разработке ППР, что позволило минимизировать накладные расходы организации и сроки выполнения строительно-монтажных работ.</li> 
+                                            <li data-i18n="experience__accomplishments__mss__2011__4">Неоднократно была награждена грамотами руководства организации за высокие достижения и значительный вклад в развитие строительной отрасли.</li>
                                         </ol>
                                     </p>     
                                 </div>
@@ -384,10 +396,10 @@
 
                     <div class="column lg-12" data-animate-block>
 
-                        <h2 class="text-pretitle" data-animate-el>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="works__portfolio__title__1">
                             Портфолио моих работ
                         </h2>
-                        <p class="h1" data-animate-el>
+                        <p class="h1" data-animate-el data-i18n="works__portfolio__title__2">
                             Ниже некоторые примеры работ из разных направлений моей деятельности. С работами можно ознакомиться по ссылкам.
                         </p>
     
@@ -401,10 +413,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__01__3">
                                             Детская поликлиника на 250 посещений в смену
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__01__1">
                                             Исполнительная документация
                                         </div>
                                     </div>
@@ -422,10 +434,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__02__3">
                                             Детская поликлиника на 250 посещений в смену
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__02__1">
                                             Входной контроль РД
                                         </div>
                                     </div>
@@ -443,10 +455,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__03__3">
                                             Детская поликлиника на 250 посещений в смену
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__03__1">
                                             Лимитно-заборные карты на материалы
                                         </div>
                                     </div>
@@ -464,10 +476,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__04__3">
                                             АЭС "Руппур" в НРБ
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__04__1">
                                             Информационная система "ЕОС-Качество"
                                         </div>
                                     </div>
@@ -486,10 +498,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__05__3">
                                             АЭС "Руппур" в НРБ
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__05__1">
                                             Регламент взаимодействия участников строительства 
                                         </div>
                                     </div>
@@ -508,10 +520,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__06__3">
                                             Ростовская АЭС
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__06__1">
                                             Стандарт предприятия разработки и согласования ППР 
                                         </div>
                                     </div>
@@ -529,10 +541,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__07__3">
                                             АЭС "Руппур" в НРБ
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__07__1">
                                             Проект производства работ (земляные работы)
                                         </div>
                                     </div>
@@ -551,10 +563,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__08__3">
                                             АЭС "Руппур" в НРБ
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__08__1">
                                             Проект производства работ (бетонные работы)
                                         </div>
                                     </div>
@@ -573,10 +585,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__09__3">
                                             АЭС "Руппур" в НРБ
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__09__1">
                                             Проект организации строительства (ПОС)
                                         </div>
                                     </div>
@@ -594,10 +606,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__10__3">
                                             АЭС "Руппур" в НРБ
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__10__1">
                                             Технологическая карта (общестроительные работы)
                                         </div>
                                     </div>
@@ -617,10 +629,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__11__3">
                                             Ростовская АЭС
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__11__1">
                                             Проект производства работ (специальные работы)
                                         </div>
                                     </div>
@@ -640,10 +652,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__12__3">
                                             Ростовская АЭС
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__12__1">
                                             Проект производства работ (монтаж мостового крана)
                                         </div>
                                     </div>
@@ -661,10 +673,10 @@
                                     </div>
                                     
                                     <div class="folio-list__item-text">
-                                        <div class="folio-list__item-cat">
+                                        <div class="folio-list__item-cat" data-i18n="works__portfolio__modal__13__3">
                                             Ростовская АЭС
                                         </div>
-                                        <div class="folio-list__item-title">
+                                        <div class="folio-list__item-title" data-i18n="works__portfolio__modal__13__1">
                                             План производства работ на высоте (ППРв)
                                         </div>
                                     </div>
@@ -708,15 +720,15 @@
                             <img src="images/portfolio/gallery/g-id.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Исполнительная документация</h5>
-                                <p> Разработала исполнительную документацию для закрытия ключевых событий. Разработала интерактивный дашборд, который предоставляет возможность мониторинга исполнительной документации по ответственным лицам, рабочей документации и ключевым событиям госконтракта.</p>
+                                <h5 data-i18n="works__portfolio__modal__01__1">Исполнительная документация</h5>
+                                <p data-i18n="works__portfolio__modal__01__2"> Разработала исполнительную документацию для закрытия ключевых событий. Разработала интерактивный дашборд, который предоставляет возможность мониторинга исполнительной документации по ответственным лицам, рабочей документации и ключевым событиям госконтракта.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Детская поликлиника на 250 посещений в смену</li>
-                                    <li>Исполнительная документация</li>
+                                    <li data-i18n="works__portfolio__modal__01__3">Детская поликлиника на 250 посещений в смену</li>
+                                    <li data-i18n="works__portfolio__modal__01__4">Исполнительная документация</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1qVZGmhV8rXTTcGFmizbZoU0qqKqCwykB/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1qVZGmhV8rXTTcGFmizbZoU0qqKqCwykB/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -725,15 +737,15 @@
                             <img src="images/portfolio/gallery/g-sp.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Входной контроль РД</h5>
-                                <p>При входном контроле рабочей документации выполнила расчеты объемов работ и материалов по рабочим чертежам. Составила сопоставительные ведомости замечаний к сметной документации, которые были направлена в адрес Генерального проектировщика для корректировки сметной документации. В результате увеличение сметной стоимости составило 27,5%. </p>
+                                <h5 data-i18n="works__portfolio__modal__02__1">Входной контроль РД</h5>
+                                <p data-i18n="works__portfolio__modal__02__2">При входном контроле рабочей документации выполнила расчеты объемов работ и материалов по рабочим чертежам. Составила сопоставительные ведомости замечаний к сметной документации, которые были направлена в адрес Генерального проектировщика для корректировки сметной документации. В результате увеличение сметной стоимости составило 27,5%.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Детская поликлиника на 250 посещений в смену</li>
-                                    <li>Входной контроль РД</li>                           
+                                    <li data-i18n="works__portfolio__modal__02__3">Детская поликлиника на 250 посещений в смену</li>
+                                    <li data-i18n="works__portfolio__modal__02__4">Входной контроль РД</li>                           
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1fFmfZ9vNqkSnrHCA3U9peOR0qL2JmvsX/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1fFmfZ9vNqkSnrHCA3U9peOR0qL2JmvsX/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -742,15 +754,15 @@
                             <img src="images/portfolio/gallery/g-lzk.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Лимитно-заборные карты на материалы</h5>
-                                <p>На базе MS Excel внедрила автоматизацию процессов составления заявок на материалы и ведения лимитно-заборных карт. Это обеспечило контроль за движением материалов, возможность формирования управленческой отчетности и сократило время составления заявок на 20%. </p>
+                                <h5 data-i18n="works__portfolio__modal__03__1">Лимитно-заборные карты на материалы</h5>
+                                <p data-i18n="works__portfolio__modal__03__2">На базе MS Excel внедрила автоматизацию процессов составления заявок на материалы и ведения лимитно-заборных карт. Это обеспечило контроль за движением материалов, возможность формирования управленческой отчетности и сократило время составления заявок на 20%.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Детская поликлиника на 250 посещений в смену</li>
-                                    <li>Составление заявок на материалы</li>                                   
+                                    <li data-i18n="works__portfolio__modal__03__3">Детская поликлиника на 250 посещений в смену</li>
+                                    <li data-i18n="works__portfolio__modal__03__4">Составление заявок на материалы</li>                                   
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1zuWduJbr4sw2sIDSuiNejbc_97hAZcs-/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1zuWduJbr4sw2sIDSuiNejbc_97hAZcs-/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -761,15 +773,15 @@
                             <img src="images/portfolio/gallery/g-eos.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Информационная система "ЕОС-Качество"</h5>
-                                <p> В должности начальника отдела разработала дорожную карту и выполнила организационные мероприятия по ней, что позволило в срок ввести в промышленную эксплуатацию ИС "ЕОС-Качество" на проекте АЭС "Руппур". Обеспечила эффективное функционирование системы и выполнение ФКПЭ компании (индекс снижения несоответствий). Пример моей управленческой отчетности <a href="https://drive.google.com/file/d/1dUMPXa62xGf9xpsxQGI1BqKoYIYdnZN_/view?usp=sharing" target="_blank"> по ссылке </a>. Информация о ИС "ЕОС-Качество" на официальном сайте ГК РОСАТОМ <a href="https://ru-bezh.ru/press-releases/it-sistema-rosatoma-eos-kachestvo-pobedila-v-nominaczii-konkursa">по ссылке.</a></p>
+                                <h5 data-i18n="works__portfolio__modal__04__1">Информационная система "ЕОС-Качество"</h5>
+                                <p data-i18n="works__portfolio__modal__04__2"> В должности начальника отдела разработала дорожную карту и выполнила организационные мероприятия по ней, что позволило в срок ввести в промышленную эксплуатацию ИС "ЕОС-Качество" на проекте АЭС "Руппур". Обеспечила эффективное функционирование системы и выполнение ФКПЭ компании (индекс снижения несоответствий). Пример моей управленческой отчетности <a href="https://drive.google.com/file/d/1dUMPXa62xGf9xpsxQGI1BqKoYIYdnZN_/view?usp=sharing" target="_blank"> по ссылке </a>. Информация о ИС "ЕОС-Качество" на официальном сайте ГК РОСАТОМ <a href="https://ru-bezh.ru/press-releases/it-sistema-rosatoma-eos-kachestvo-pobedila-v-nominaczii-konkursa"> по ссылке.</a></p>
                                 <ul class="modal-popup__cat">
-                                    <li>АЭС "Руппур" в НРБ</li>
-                                    <li>ИС "ЕОС-Качество"</li>
+                                    <li data-i18n="works__portfolio__modal__04__3">АЭС "Руппур" в НРБ</li>
+                                    <li data-i18n="works__portfolio__modal__04__4">ИС "ЕОС-Качество"</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://www.youtube.com/watch?v=D6J1Iq7gtxw" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://www.youtube.com/watch?v=D6J1Iq7gtxw" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -779,15 +791,15 @@
                             <img src="images/portfolio/gallery/g-reg.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Регламент взаимодействия участников строительства</h5>
-                                <p>Разработала регламент, который устанавливает единые требования к порядку взаимодействия при выявлении и проведении ремонтных работ по устранению дефектов бетонных и железобетонных конструкций. Данный регламент позволил сократить сроки выполнения ремонтных работ с 46 дней до 15 дней.</p>
+                                <h5 data-i18n="works__portfolio__modal__05__1">Регламент взаимодействия участников строительства</h5>
+                                <p data-i18n="works__portfolio__modal__05__2">Разработала регламент, который устанавливает единые требования к порядку взаимодействия при выявлении и проведении ремонтных работ по устранению дефектов бетонных и железобетонных конструкций. Данный регламент позволил сократить сроки выполнения ремонтных работ с 46 дней до 15 дней.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>АЭС "Руппур" в НРБ</li>
-                                    <li>Разработка документов ИСМ</li>
+                                    <li data-i18n="works__portfolio__modal__05__3">АЭС "Руппур" в НРБ</li>
+                                    <li data-i18n="works__portfolio__modal__05__4">Разработка документов ИСМ</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1KL_uGdOhVyTIhdMhrWIL0vvS1t6STYxu/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1KL_uGdOhVyTIhdMhrWIL0vvS1t6STYxu/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -796,15 +808,15 @@
                             <img src="images/portfolio/gallery/g-roaes.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Стандарт предприятия разработки и согласования ППР</h5>
-                                <p>Разработала стандарт предприятия, в котором определила риски при разработке ППР, установила порядок разработки и регламентировала сроки разработки ППР, что сократило время разработки ППР на 30% и повысило качество разработки ППР (проверки в надзорных органах прошли без замечаний к ППР).</p>
+                                <h5 data-i18n="works__portfolio__modal__06__1">Стандарт предприятия разработки и согласования ППР</h5>
+                                <p data-i18n="works__portfolio__modal__06__2">Разработала стандарт предприятия, в котором определила риски при разработке ППР, установила порядок разработки и регламентировала сроки разработки ППР, что сократило время разработки ППР на 30% и повысило качество разработки ППР (проверки в надзорных органах прошли без замечаний к ППР).</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Ростовская АЭС</li>
-                                    <li>Разработка документов ИСМ</li>
+                                    <li data-i18n="works__portfolio__modal__06__3">Ростовская АЭС</li>
+                                    <li data-i18n="works__portfolio__modal__06__4">Разработка документов ИСМ</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1g3se5rwzs-RT3EPzzJ4VBP1mVbmuV8fO/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1g3se5rwzs-RT3EPzzJ4VBP1mVbmuV8fO/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -814,15 +826,15 @@
                             <img src="images/portfolio/gallery/g-ppr0.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Проект производства работ (земляные работы)</h5>
-                                <p>В ходе разработки ППР проводила организационно-технологические расчеты выполнения земляных работ, что обеспечило выполнение работ на высоком уровне качества в установленные сроки и способствовало снижению накладных расходов организации. За период своей карьеры разработала более 100 ППР, охватывающих различные виды общестроительных работ.</p>
+                                <h5 data-i18n="works__portfolio__modal__07__1">Проект производства работ (земляные работы)</h5>
+                                <p data-i18n="works__portfolio__modal__07__2">В ходе разработки ППР проводила организационно-технологические расчеты выполнения земляных работ, что обеспечило выполнение работ на высоком уровне качества в установленные сроки и способствовало снижению накладных расходов организации. За период своей карьеры разработала более 100 ППР, охватывающих различные виды общестроительных работ.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>АЭС "Руппур" в НРБ</li>
-                                    <li>Разработка ОТД (ППР, ППРк и ТК)</li>
+                                    <li data-i18n="works__portfolio__modal__07__3">АЭС "Руппур" в НРБ</li>
+                                    <li data-i18n="works__portfolio__modal__07__4">Разработка ОТД (ППР, ППРк и ТК)</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1ir68WS1j-jMbthsP3y0733CRM2dAqINZ/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1ir68WS1j-jMbthsP3y0733CRM2dAqINZ/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -831,15 +843,15 @@
                             <img src="images/portfolio/gallery/g-ppr1.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Проект производства работ (бетонные работы)</h5>
-                                <p>В ходе разработки ППР проводила организационно-технологические расчеты выполнения бетонных работ, что обеспечило выполнение работ на высоком уровне качества в установленные сроки и способствовало снижению накладных расходов организации. За период своей карьеры разработала более 100 ППР, охватывающих различные виды общестроительных работ.</p>
+                                <h5 data-i18n="works__portfolio__modal__08__1">Проект производства работ (бетонные работы)</h5>
+                                <p data-i18n="works__portfolio__modal__08__2">В ходе разработки ППР проводила организационно-технологические расчеты выполнения бетонных работ, что обеспечило выполнение работ на высоком уровне качества в установленные сроки и способствовало снижению накладных расходов организации. За период своей карьеры разработала более 100 ППР, охватывающих различные виды общестроительных работ.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>АЭС "Руппур" в НРБ</li>
-                                    <li>Разработка ОТД (ППР, ППРк и ТК)</li>
+                                    <li data-i18n="works__portfolio__modal__08__3">АЭС "Руппур" в НРБ</li>
+                                    <li data-i18n="works__portfolio__modal__08__4">Разработка ОТД (ППР, ППРк и ТК)</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/12HrWsE99-yEY00zGHLAstoURAkvrYEUf/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/12HrWsE99-yEY00zGHLAstoURAkvrYEUf/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -850,15 +862,15 @@
                             <img src="images/portfolio/gallery/g-pos.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Проект организации строительства (ПОС)</h5>
-                                <p> Разработала проект организации строительства с указанием эффективных форм и методов организации работы, требований к качеству работы. Это обеспечило успешное достижение проектных технико-экономических показателей и начало основного периода строительства согласно графику.</p>
+                                <h5 data-i18n="works__portfolio__modal__09__1">Проект организации строительства (ПОС)</h5>
+                                <p data-i18n="works__portfolio__modal__09__2">Разработала проект организации строительства с указанием эффективных форм и методов организации работы, требований к качеству работы. Это обеспечило успешное достижение проектных технико-экономических показателей и начало основного периода строительства согласно графику.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>АЭС "Руппур" в НРБ</li>                
-                                    <li>Разработка ПД и РД</li>
+                                    <li data-i18n="works__portfolio__modal__09__3">АЭС "Руппур" в НРБ</li>                
+                                    <li data-i18n="works__portfolio__modal__09__4">Разработка ПД и РД</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/12QzlkAQmJQrldCrsFDaPWnXbvmOxNu8D/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/12QzlkAQmJQrldCrsFDaPWnXbvmOxNu8D/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -867,15 +879,15 @@
                             <img src="images/portfolio/gallery/g-tk.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Технологическая карта (общестроительные работы)</h5>
-                                <p>Разработала технологические карты с указанием решений по организации и технологии работ, мероприятий по охране труда, потребности в материалах и требований к качеству работ. Это обеспечило выполнение работ надлежащего качества в установленные сроки.</p>
+                                <h5 data-i18n="works__portfolio__modal__10__1">Технологическая карта (общестроительные работы)</h5>
+                                <p data-i18n="works__portfolio__modal__10__2">Разработала технологические карты с указанием решений по организации и технологии работ, мероприятий по охране труда, потребности в материалах и требований к качеству работ. Это обеспечило выполнение работ надлежащего качества в установленные сроки.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>АЭС "Руппур" в НРБ</li>
-                                    <li>Разработка ОТД (ППР и ТК)</li>
+                                    <li data-i18n="works__portfolio__modal__10__3">АЭС "Руппур" в НРБ</li>
+                                    <li data-i18n="works__portfolio__modal__10__4">Разработка ОТД (ППР и ТК)</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1QCZmlHyBGXgaln_xIN7NoI8sdwWFYjoJ/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1QCZmlHyBGXgaln_xIN7NoI8sdwWFYjoJ/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -885,15 +897,15 @@
                             <img src="images/portfolio/gallery/g-ppr2.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Проект производства работ (специальные работы)</h5>
-                                <p>Разработала ППР на монтаж технологических трубопроводов и оборудования 2 класса безопасности, основываясь на организационно-технологических расчетах и риск-ориентированном подходе. Это обеспечило успешное прохождение инспекционных проверок Ростехнадзора без замечаний. За период своей карьеры разработала более 100 ППР на монтаж трубопроводов и оборудования 2, 3 и 4 классов безопасности, а также инженерных сетей.</p>
+                                <h5 data-i18n="works__portfolio__modal__11__1">Проект производства работ (специальные работы)</h5>
+                                <p data-i18n="works__portfolio__modal__11__2">Разработала ППР на монтаж технологических трубопроводов и оборудования 2 класса безопасности, основываясь на организационно-технологических расчетах и риск-ориентированном подходе. Это обеспечило успешное прохождение инспекционных проверок Ростехнадзора без замечаний. За период своей карьеры разработала более 100 ППР на монтаж трубопроводов и оборудования 2, 3 и 4 классов безопасности, а также инженерных сетей.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Ростовская АЭС</li>
-                                    <li>Разработка ОТД (ППР, ППРк и ТК)</li> 
+                                    <li data-i18n="works__portfolio__modal__11__3">Ростовская АЭС</li>
+                                    <li data-i18n="works__portfolio__modal__11__4">Разработка ОТД (ППР, ППРк и ТК)</li> 
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1t1neqK3I4lej4jX2-3F7p_nBNTUwoEVy/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1t1neqK3I4lej4jX2-3F7p_nBNTUwoEVy/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -902,15 +914,15 @@
                             <img src="images/portfolio/gallery/g-ppr3.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Проект производства работ (монтаж мостового крана)</h5>
-                                <p>В условиях недостатка исходных данных разработала проект производства работ на монтаж мостового крана с применением вариантного проектирования организационно-технологических решений. Это обеспечило успешное выполнение работ согласно утвержденному графику. Полученные аттестации Ростехнадзора также подтверждают мой профессиональный уровень разработки ППРк и ППР на монтаж ПС.</p>
+                                <h5 data-i18n="works__portfolio__modal__12__1">Проект производства работ (монтаж мостового крана)</h5>
+                                <p data-i18n="works__portfolio__modal__12__2">В условиях недостатка исходных данных разработала проект производства работ на монтаж мостового крана с применением вариантного проектирования организационно-технологических решений. Это обеспечило успешное выполнение работ согласно утвержденному графику. Полученные аттестации Ростехнадзора также подтверждают мой профессиональный уровень разработки ППРк и ППР на монтаж ПС.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Ростовская АЭС</li>
-                                    <li>Разработка ОТД (ППР, ППРк и ТК)</li>
+                                    <li data-i18n="works__portfolio__modal__12__3">Ростовская АЭС</li>
+                                    <li data-i18n="works__portfolio__modal__12__4">Разработка ОТД (ППР, ППРк и ТК)</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1Ix5LA_iPp4hP4rYuUGJJpJefAjo-QLFX/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1Ix5LA_iPp4hP4rYuUGJJpJefAjo-QLFX/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -919,15 +931,15 @@
                             <img src="images/portfolio/gallery/g-pprV.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>План производства работ на высоте (ППРв)</h5>
-                                <p>Разработала документацию по охране труда, которая обеспечила безопасное выполнение работ на высоте. Документация была разработана в полном соответствии с Правилами по охране труда при работе на высоте. </p>
+                                <h5 data-i18n="works__portfolio__modal__13__1">План производства работ на высоте (ППРв)</h5>
+                                <p data-i18n="works__portfolio__modal__13__2">Разработала документацию по охране труда, которая обеспечила безопасное выполнение работ на высоте. Документация была разработана в полном соответствии с Правилами по охране труда при работе на высоте.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Ростовская АЭС</li>
-                                    <li>Разработка ППРв и ТКв</li>
+                                    <li data-i18n="works__portfolio__modal__13__3">Ростовская АЭС</li>
+                                    <li data-i18n="works__portfolio__modal__13__4">Разработка ППРв и ТКв</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://drive.google.com/file/d/1N8hl2pOg_8nXeUjhz5r73Hmz_YZGan_t/view?usp=sharing" target="_blank" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://drive.google.com/file/d/1N8hl2pOg_8nXeUjhz5r73Hmz_YZGan_t/view?usp=sharing" target="_blank" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -937,15 +949,15 @@
                             <img src="images/portfolio/gallery/g-web.jpg" alt="">
                 
                             <div class="modal-popup__desc">
-                                <h5>Figma, Wordpress, HTML, CSS, Phyton, SQL, JavaScript</h5>
-                                <p>Использую веб-разработку и анализ данных в своей профессиональной деятельности. Имею опыт работы в Figma, Wordpress, HTML, CSS, Phyton, SQL, JavaScript. Например, данный сайт полностью разработала самостоятельно.</p>
+                                <h5 data-i18n="works__portfolio__modal__14__1">Figma, Wordpress, HTML, CSS, Phyton, SQL, JavaScript</h5>
+                                <p data-i18n="works__portfolio__modal__14__2">Использую веб-разработку и анализ данных в своей профессиональной деятельности. Имею опыт работы в Figma, Wordpress, HTML, CSS, Phyton, SQL, JavaScript. Например, данный сайт полностью разработала самостоятельно.</p>
                                 <ul class="modal-popup__cat">
-                                    <li>Figma, Wordpress, HTML, CSS, Phyton, SQL, JavaScript</li>
-                                    <li>Web developer</li>
+                                    <li data-i18n="works__portfolio__modal__14__3">Figma, Wordpress, HTML, CSS, Phyton, SQL, JavaScript</li>
+                                    <li data-i18n="works__portfolio__modal__14__4">Web developer</li>
                                 </ul>
                             </div>
                 
-                            <a href="https://github.com/EkaterinaPr2023" class="modal-popup__details">Ссылка на проект</a>
+                            <a href="https://github.com/EkaterinaPr2023" class="modal-popup__details" data-i18n="works__portfolio__link">Ссылка на проект</a>
                         </div>
                     </div> <!-- end modal -->
 
@@ -1014,7 +1026,7 @@
 
                     <div class="column lg-6 tab-12">
 
-                        <h2 class="text-pretitle" data-animate-el>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="education__title__1">
                             Образование
                         </h2>
 
@@ -1023,22 +1035,22 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">Национальный исследовательский ядерный университет МИФИ</h3>
-                                    <h4 class="timeline__meta">Промышленное и гражданское строительство</h4>
-                                    <h4 class="timeline__meta">Квалификация: Инженер-строитель</h4>
-                                    <h4 class="timeline__meta">Средний балл диплома: 5.0</h4>
-                                    <p class="timeline__timeframe">2006-2011</p>
+                                    <h3 class="timeline__title" data-i18n="education__mifi__1">Национальный исследовательский ядерный университет МИФИ</h3>
+                                    <h4 class="timeline__meta" data-i18n="education__mifi__2">Промышленное и гражданское строительство</h4>
+                                    <h4 class="timeline__meta" data-i18n="education__mifi__3">Квалификация: Инженер-строитель</h4>
+                                    <h4 class="timeline__meta" data-i18n="education__mifi__4">Средний балл диплома: 5.0</h4>
+                                    <p class="timeline__timeframe" data-i18n="education__mifi__5">2006-2011</p>
                                 </div>                               
                             </div>
     
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">Ростовский государственный экономический университет "РИНХ"</h3>
-                                    <h4 class="timeline__meta">Экономика</h4>
-                                    <h4 class="timeline__meta">Квалификация: Экономист</h4>
-                                    <h4 class="timeline__meta">Средний балл диплома: 4.6</h4>
-                                    <p class="timeline__timeframe">2012-2016</p>
+                                    <h3 class="timeline__title" data-i18n="education__rinh__1">Ростовский государственный экономический университет "РИНХ"</h3>
+                                    <h4 class="timeline__meta" data-i18n="education__rinh__2">Экономика</h4>
+                                    <h4 class="timeline__meta" data-i18n="education__rinh__3">Квалификация: Экономист</h4>
+                                    <h4 class="timeline__meta" data-i18n="education__rinh__4">Средний балл диплома: 4.6</h4>
+                                    <p class="timeline__timeframe" data-i18n="education__rinh__5">2012-2016</p>
                                 </div>
                             </div>
                         </div> <!-- end timeline -->
@@ -1047,7 +1059,7 @@
 
                     <div class="column lg-6 tab-12">
 
-                        <h2 class="text-pretitle" data-animate-el>
+                        <h2 class="text-pretitle" data-animate-el data-i18n="education__title__1">
                             Образование
                         </h2>
 
@@ -1056,20 +1068,20 @@
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">Master of Business Administration (MBA)</h3>
-                                    <h4 class="timeline__meta">Стратегический менеджмент</h4>
-                                    <h4 class="timeline__meta">Квалификация: Master of Business Administration (MBA)</h4>
-                                    <p class="timeline__timeframe">2023</p>
+                                    <h3 class="timeline__title" data-i18n="education__mba__1">Master of Business Administration (MBA)</h3>
+                                    <h4 class="timeline__meta" data-i18n="education__mba__2">Стратегический менеджмент</h4>
+                                    <h4 class="timeline__meta" data-i18n="education__mba__3">Квалификация: Master of Business Administration (MBA)</h4>
+                                    <p class="timeline__timeframe" data-i18n="education__mba__4">2023</p>
                                 </div>
                             </div>
     
                             <div class="timeline__block">
                                 <div class="timeline__bullet"></div>
                                 <div class="timeline__header">
-                                    <h3 class="timeline__title">Московский финансово-промышленный университет</h3>
-                                    <h4 class="timeline__meta">Веб-дизайн и разработка сайтов</h4>
-                                    <h4 class="timeline__meta">Квалификация: Веб-разработчик</h4>
-                                    <p class="timeline__timeframe">2024</p>
+                                    <h3 class="timeline__title" data-i18n="education__web__1">Московский финансово-промышленный университет</h3>
+                                    <h4 class="timeline__meta" data-i18n="education__web__2">Веб-дизайн и разработка сайтов</h4>
+                                    <h4 class="timeline__meta" data-i18n="education__web__3">Квалификация: Веб-разработчик</h4>
+                                    <p class="timeline__timeframe" data-i18n="education__web__4">2024</p>
                                 </div>
                             </div>
     
@@ -1083,23 +1095,23 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Программы повышения квалификации в области управления проектом:</h2>                    
+                        <h2 class="text-pretitle" data-animate-el data-i18n="programmes__title__1">Программы повышения квалификации в области управления проектом:</h2>                    
                         <ul class="timeline__title" data-animate-el>
-                                <li>2025, Columbia University, Specialization, Construction Management</li>
+                                <li data-i18n="programmes__li__1__1">2025, Columbia University, Specialization, Construction Management</li>
                                 <br> 
-                                <li>2023, University of California, Irvine, Managing Project Risks and Changes</li> 
+                                <li data-i18n="programmes__li__1__2">2023, University of California, Irvine, Managing Project Risks and Changes</li> 
                                 <br>
-                                <li>2023, РУДН, Управление проектами. От теории к практике</li>
+                                <li data-i18n="programmes__li__1__3">2023, РУДН, Управление проектами. От теории к практике</li>
                                 <br>
-                                <li>2023, ОмГТУ, Цифровое моделирование бизнес-процессов на основе имитационного моделирования</li>
+                                <li data-i18n="programmes__li__1__4">2023, ОмГТУ, Цифровое моделирование бизнес-процессов на основе имитационного моделирования</li>
                                 <br>
-                                <li>2023, РУДН, Управление цифровой трансформацией. Проектный подход</li>  
+                                <li data-i18n="programmes__li__1__5">2023, РУДН, Управление цифровой трансформацией. Проектный подход</li>  
                                 <br> 
-                                <li>2022, РАНХГИС, Эпоха цифрового развития: основы цифровой трансформации</li>  
+                                <li data-i18n="programmes__li__1__6">2022, РАНХГИС, Эпоха цифрового развития: основы цифровой трансформации</li>  
                                 <br> 
-                                <li>2022, РАНХГИС, Цифровая трансформация. Быстрый старт</li>  
+                                <li data-i18n="programmes__li__1__7">2022, РАНХГИС, Цифровая трансформация. Быстрый старт</li>  
                                 <br>                
-                                <li>2021, УНЦ ПРИ МГТУ ИМ Н.Э. БАУМАНА, Microsoft Project Professional. Управление проектами</li>                                                    
+                                <li data-i18n="programmes__li__1__8">2021, УНЦ ПРИ МГТУ ИМ Н.Э. БАУМАНА, Microsoft Project Professional. Управление проектами</li>                                                    
                         </ul>
                     </div>
                 </div> <!-- end about-expertise -->
@@ -1107,21 +1119,21 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Программы повышения квалификации в области управления персоналом:</h2>                    
+                        <h2 class="text-pretitle" data-animate-el data-i18n="programmes__title__2">Программы повышения квалификации в области управления персоналом:</h2>                    
                         <ul class="timeline__title" data-animate-el>
-                                <li>2023, Yale, Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator</li>
+                                <li data-i18n="programmes__li__2__1">2023, Yale, Introduction to Negotiation: A Strategic Playbook for Becoming a Principled and Persuasive Negotiator</li>
                                 <br> 
-                                <li>2023, МГИМО, Технология ведения международных переговоров</li> 
+                                <li data-i18n="programmes__li__2__2">2023, МГИМО, Технология ведения международных переговоров</li> 
                                 <br>
-                                <li>2023, РТУ МИРЭА, Управление человеческими ресурсами</li>
+                                <li data-i18n="programmes__li__2__3">2023, РТУ МИРЭА, Управление человеческими ресурсами</li>
                                 <br>
-                                <li>2022, НГУЭУ, Бизнес-коммуникации</li>  
+                                <li data-i18n="programmes__li__2__4">2022, НГУЭУ, Бизнес-коммуникации</li>  
                                 <br> 
-                                <li>2022, ОмГТУ, Управление персоналом</li>  
+                                <li data-i18n="programmes__li__2__5">2022, ОмГТУ, Управление персоналом</li>  
                                 <br> 
-                                <li>2022, НИТГУ, Деловой этикет: от Слов к Делу</li>  
+                                <li data-i18n="programmes__li__2__6">2022, НИТГУ, Деловой этикет: от Слов к Делу</li>  
                                 <br>                
-                                <li>2021, НГУЭУ, Лидерство и командное развитие</li>                                                    
+                                <li data-i18n="programmes__li__2__7">2021, НГУЭУ, Лидерство и командное развитие</li>                                                    
                         </ul>
                     </div>
                 </div> <!-- end about-expertise -->
@@ -1129,19 +1141,19 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Программы повышения квалификации в области анализа данных:</h2>                    
+                        <h2 class="text-pretitle" data-animate-el data-i18n="programmes__title__3">Программы повышения квалификации в области анализа данных:</h2>                    
                         <ul class="timeline__title" data-animate-el>
-                                <li>2024, IBM, Python for Data Science, AI & Development</li>
+                                <li data-i18n="programmes__li__3__1">2024, IBM, Python for Data Science, AI & Development</li>
                                 <br> 
-                                <li>2023, IBM, Data Visualization and Dashboards with Excel and Cognos </li> 
+                                <li data-i18n="programmes__li__3__2">2023, IBM, Data Visualization and Dashboards with Excel and Cognos </li> 
                                 <br>
-                                <li>2023, IBM, Excel Basics for Data Analysis </li>
+                                <li data-i18n="programmes__li__3__3">2023, IBM, Excel Basics for Data Analysis </li>
                                 <br>
-                                <li>2023, IBM, Introduction to Data Analytics </li>  
+                                <li data-i18n="programmes__li__3__4">2023, IBM, Introduction to Data Analytics </li>  
                                 <br> 
-                                <li>2023, МГИМО, Цифровые международные отношения </li>  
+                                <li data-i18n="programmes__li__3__5">2023, МГИМО, Цифровые международные отношения </li>  
                                 <br> 
-                                <li>2022, РАНХиГС, Основы работы с данными </li>                                                     
+                                <li data-i18n="programmes__li__3__6">2022, РАНХиГС, Основы работы с данными </li>                                                     
                         </ul>
                     </div>
                 </div> <!-- end about-expertise -->
@@ -1149,15 +1161,15 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Программы повышения квалификации в области управления качеством:</h2>                    
+                        <h2 class="text-pretitle" data-animate-el data-i18n="programmes__title__4">Программы повышения квалификации в области управления качеством:</h2>                    
                         <ul class="timeline__title" data-animate-el>
-                                <li>2021, ТЕХНИЧЕСКАЯ АКАДЕМИЯ РОСАТОМА, Управление несоответствиями с применением ИС «ЕОС-Качество» </li>
+                                <li data-i18n="programmes__li__4__1">2021, ТЕХНИЧЕСКАЯ АКАДЕМИЯ РОСАТОМА, Управление несоответствиями с применением ИС «ЕОС-Качество» </li>
                                 <br> 
-                                <li>2021, ТЕХНИЧЕСКАЯ АКАДЕМИЯ РОСАТОМА, Внутренний аудит интегрированных систем менеджмента (ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, ISO 19011:2018)</li> 
+                                <li data-i18n="programmes__li__4__2">2021, ТЕХНИЧЕСКАЯ АКАДЕМИЯ РОСАТОМА, Внутренний аудит интегрированных систем менеджмента (ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, ISO 19011:2018)</li> 
                                 <br>
-                                <li>2021, ТЕХНИЧЕСКАЯ АКАДЕМИЯ РОСАТОМА, Подготовка внутренних аудиторов системы менеджмента качества предприятия (ISO 9001)</li>
+                                <li data-i18n="programmes__li__4__3">2021, ТЕХНИЧЕСКАЯ АКАДЕМИЯ РОСАТОМА, Подготовка внутренних аудиторов системы менеджмента качества предприятия (ISO 9001)</li>
                                 <br>
-                                <li>2021, ООО ЛИДЕР НК, Визуально-измерительный контроль, Уровень II </li>                                                    
+                                <li data-i18n="programmes__li__4__4">2021, ООО ЛИДЕР НК, Визуально-измерительный контроль, Уровень II </li>                                                    
                         </ul>
                     </div>
                 </div> <!-- end about-expertise -->
@@ -1165,15 +1177,15 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Программы повышения квалификации в области строительства:</h2>                    
+                        <h2 class="text-pretitle" data-animate-el data-i18n="programmes__title__5">Программы повышения квалификации в области строительства:</h2>                    
                         <ul class="timeline__title" data-animate-el>
-                                <li>2022, СПБГАСУ, Специалист по организации архитектурно-строительного проектирования </li>
+                                <li data-i18n="programmes__li__5__1">2022, СПБГАСУ, Специалист по организации архитектурно-строительного проектирования </li>
                                 <br> 
-                                <li>2020, СПБГАСУ, Специалист по организации строительства. Организация выполнения работ по строительству, реконструкции, капитальному ремонту </li> 
+                                <li data-i18n="programmes__li__5__2">2020, СПБГАСУ, Специалист по организации строительства. Организация выполнения работ по строительству, реконструкции, капитальному ремонту </li> 
                                 <br>
-                                <li>2014, СРО "Союзатомстрой", Устройство наружных сетей и внутренних инженерных систем на объектах использования атомной энергии</li>
+                                <li data-i18n="programmes__li__5__3">2014, СРО "Союзатомстрой", Устройство наружных сетей и внутренних инженерных систем на объектах использования атомной энергии</li>
                                 <br>
-                                <li>2011, Авторизованный центр фирмы «1С», Сметное дело</li>                                                    
+                                <li data-i18n="programmes__li__5__4">2011, Авторизованный центр фирмы «1С», Сметное дело</li>                                                    
                         </ul>
                     </div>
                 </div> <!-- end about-expertise -->
@@ -1181,27 +1193,27 @@
                 <div class="row about-expertise" data-animate-block>
                     <div class="column lg-12">
 
-                        <h2 class="text-pretitle" data-animate-el>Аттестации Ростехнадзора:</h2>                    
+                        <h2 class="text-pretitle" data-animate-el data-i18n="programmes__title__6">Аттестации Ростехнадзора:</h2>                    
                         <ul class="timeline__title" data-animate-el>
-                                <li>2022, Б.2.7 Магистральные нефтепроводы и нефтепродуктопроводы </li>
+                                <li data-i18n="programmes__li__6__1">2022, Б.2.7 Магистральные нефтепроводы и нефтепродуктопроводы</li>
                                 <br> 
-                                <li>2022, Б.2.8 Магистральные газопроводы </li> 
+                                <li data-i18n="programmes__li__6__2">2022, Б.2.8 Магистральные газопроводы</li> 
                                 <br>
-                                <li>2022, Б.9.5 Проектирование, строительство, реконструкция, техническое перевооружение, капитальный ремонт, консервация, ликвидация опасных производственных объектов, на которых используются подъемные сооружения </li>
+                                <li data-i18n="programmes__li__6__3">2022, Б.9.5 Проектирование, строительство, реконструкция, техническое перевооружение, капитальный ремонт, консервация, ликвидация опасных производственных объектов, на которых используются подъемные сооружения</li>
                                 <br>
-                                <li>2021, А.1 Основы промышленной безопасности</li>   
+                                <li data-i18n="programmes__li__6__4">2021, А.1 Основы промышленной безопасности</li>   
                                 <br>
-                                <li>2021, Б.9.3 Эксплуатация опасных производственных объектов, на которых используются подъемные сооружения, предназначенные для подъема и перемещения грузов </li> 
+                                <li data-i18n="programmes__li__6__5">2021, Б.9.3 Эксплуатация опасных производственных объектов, на которых используются подъемные сооружения, предназначенные для подъема и перемещения грузов</li> 
                                 <br>
-                                <li>2021, Б.9.4 Эксплуатация опасных производственных объектов, на которых используются подъемные сооружения, предназначенные для подъема и транспортировки людей </li>  
+                                <li data-i18n="programmes__li__6__6">2021, Б.9.4 Эксплуатация опасных производственных объектов, на которых используются подъемные сооружения, предназначенные для подъема и транспортировки людей</li>  
                                 <br>
-                                <li>2021, Б.9.6 Монтаж, наладка, обслуживание, ремонт, реконструкция или модернизация подъемных сооружений </li> 
+                                <li data-i18n="programmes__li__6__7">2021, Б.9.6 Монтаж, наладка, обслуживание, ремонт, реконструкция или модернизация подъемных сооружений</li> 
                                 <br>
-                                <li>2021, В.1 Гидротехнические сооружения объектов промышленности </li>     
+                                <li data-i18n="programmes__li__6__8">2021, В.1 Гидротехнические сооружения объектов промышленности</li>     
                                 <br>
-                                <li>2021, В.2 Гидротехнические сооружения объектов энергетики </li> 
+                                <li data-i18n="programmes__li__6__9">2021, В.2 Гидротехнические сооружения объектов энергетики</li> 
                                 <br>
-                                <li>2021, В.4 Экспертиза деклараций безопасности гидротехнических сооружений </li>                                               
+                                <li data-i18n="programmes__li__6__10">2021, В.4 Экспертиза деклараций безопасности гидротехнических сооружений</li>                                               
                         </ul>
                     </div>
                 </div> <!-- end about-expertise -->
@@ -1217,11 +1229,11 @@
 
                 <div class="row contact-top">
                     <div class="column lg-12">
-                        <h2 class="text-pretitle">
+                        <h2 class="text-pretitle" data-i18n="contact__title__1">
                             Обратная связь
                         </h2>
 
-                        <p class="h1">
+                        <p class="h1" data-i18n="contact__text__1">
                             Если у вас есть вопросы или вы просто хотите обсудить новости в профессиональной сфере, <br>
                             не стесняйтесь написать мне. Буду рада пообщаться с вами.
                         </p>
@@ -1233,14 +1245,14 @@
 
                 <div class="row contact-bottom">
                     <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Контакты:</h3>
+                        <h3 class="text-pretitle" data-i18n="contact__title__2">Контакты:</h3>
                         <p class="contact-links">
                             <a href="ekaterina.priadkina@gmail.com" class="mailtoui">ekaterina.priadkina@gmail.com</a> <br>
                             <a href="tel:+79167683495">+79167683495</a>
                         </p>
                     </div>
                     <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
-                        <h3 class="text-pretitle">Социальные сети</h3>
+                        <h3 class="text-pretitle" data-i18n="contact__title__3">Социальные сети</h3>
                         <ul class="contact-social">
                             <li><a href="https://github.com/EkaterinaPr2023">GitHub</a></li>
                             <li><a href="https://hh.ru/resume/9f3b7c26ff0bdf7d500039ed1f773377767533">HH.ru</a></li>
@@ -1249,7 +1261,7 @@
                         </ul>
                     </div>
                     <div class="column lg-4 md-12 contact-block">
-                        <a href=" " class="mailtoui btn btn--medium u-fullwidth contact-btn">Обратная связь</a>
+                        <a href=" " class="mailtoui btn btn--medium u-fullwidth contact-btn" data-i18n="contact__title__4">Обратная связь</a>
                     </div>
                 </div> <!-- end contact-bottom -->
 
@@ -1263,8 +1275,8 @@
 
             <div class="row">
                 <div class="column ss-copyright">
-                    <span>© Copyright Прядкина Екатерина 2024</span> 
-                    <span>Design by Прядкина Екатерина</span>
+                    <span data-i18n="contact__title__5">© Copyright Прядкина Екатерина 2024</span> 
+                    <span data-i18n="contact__title__6">Design by Прядкина Екатерина</span>
                 </div>
 
                 <div class="ss-go-top">
@@ -1283,6 +1295,8 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lang.js"></script>
+
     
     <!-- Java Script Gallery
     ================================================== -->
