@@ -4461,7 +4461,7 @@ img.u-pull-left {
     margin-top: var(--vspace-1);
     margin-bottom: 0;
   }
-
+} /* end @media screen and (min-width: 1201px) */
 
 /* аккуратные интервалы списка без <br> */
 .about-info__text .about-list {
