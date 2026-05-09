@@ -4247,6 +4247,31 @@ img.u-pull-left {
 
 
 
+/* Certificates / documents slider images (portrait + landscape) */
+
+.certificates-slider .testimonial-slider__slide a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificates-slider .docs-slider__img {
+    width: 100%;
+    height: 520px;          /* единая “витрина” по высоте */
+    object-fit: contain;    /* важно: и альбомные, и книжные вписываются */
+    display: block;
+    border-radius: 8px;     /* мягко в твою общую стилистику */
+}
+
+/* responsive высота */
+@media screen and (max-width: 800px) {
+    .certificates-slider .docs-slider__img { height: 420px; }
+}
+@media screen and (max-width: 500px) {
+    .certificates-slider .docs-slider__img { height: 320px; }
+}
+
+
 
 
 
@@ -4305,4 +4330,151 @@ img.u-pull-left {
     .language-switcher {
         margin-left: auto;
     }
+}
+
+
+/* меньше отступ между заголовком "Рекомендации" и слайдером */
+.recommendations-block .testimonials {
+    margin-top: var(--vspace-1);
+}
+
+/* меньше отступ между заголовком "Сертификаты" и слайдером */
+#certificates .testimonials { margin-top: 0; }
+
+
+/* ==========================================================
+   FIX: "Обо мне" не вытягивается по высоте при ресайзе
+   (вставить в самый конец styles.css)
+   ========================================================== */
+
+/* чтобы текст не "висел" по центру относительно фото */
+.about-info {
+  align-items: flex-start;
+}
+
+/* делаем текстовой колонке больше полезной ширины */
+.about-info__text {
+  box-sizing: border-box;
+  width: auto;     /* вместо width: 100% */
+  min-width: 0;    /* вместо min-width: 300px */
+  margin-left: 2rem; /* было 4rem */
+
+  /* вместо 10vw: более стабильный правый отступ */
+  padding: var(--vspace-3_5) clamp(1.5rem, 4vw, 5rem) var(--vspace-2) 0;
+}
+
+/* на этих ширинах у тебя было padding-right: 8rem — уменьшаем */
+@media screen and (max-width: 1300px) {
+  .about-info__text {
+    padding: var(--vspace-2) 4rem var(--vspace-1_5) 0;
+  }
+}
+
+/* на планшетах/мобиле оставляем "плоский" вариант (как у тебя задумано) */
+@media screen and (max-width: 1200px) {
+  .about-info__text {
+    margin-left: 0;
+    padding: var(--vspace-1) 0 0 0;
+  }
+}
+
+/* аккуратные интервалы списка (без влияния на ширину) */
+.about-info__text .about-list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.about-info__text .about-list li + li {
+  margin-top: var(--vspace-0_75);
+}
+
+
+/* ==========================================================
+   ABOUT: заголовок и кнопка ровно по границам фото (DESKTOP)
+   ========================================================== */
+
+@media screen and (min-width: 1201px) {
+
+  /* вместо вертикального центрирования */
+  .about-info {
+    align-items: stretch;
+  }
+
+  /* чтобы картинка реально тянулась по высоте строки */
+  .about-info__pic-block {
+    display: flex;
+  }
+
+  .about-info__pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* у тебя уже есть, но пусть будет явно */
+  }
+
+  /* текстовый блок — на всю высоту фото */
+  .about-info__text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    /* ключевое: убираем верх/низ отступы, которые ломают совпадение */
+    padding-top: 0;
+    padding-bottom: 0;
+
+    /* правый отступ оставим стабильным (вместо 10vw) */
+    padding-right: clamp(1.5rem, 4vw, 5rem);
+
+    /* твой отступ слева можно оставить, но он не влияет на высоту */
+    margin-left: 2rem;
+
+    width: auto;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+   /* Внутри текстового блока делаем “контейнер высоты” */
+  .about-info__text .attention-getter {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+  }
+
+  /* Список занимает всё пространство между заголовком и кнопкой */
+  .about-info__text .about-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* ключевое: распределение по высоте */
+    margin: 0;
+    padding-left: 1.2em;
+    min-height: 0;
+  }
+
+  /* Убираем “ручные” отступы между li, иначе они будут мешать распределению */
+  .about-info__text .about-list li + li {
+    margin-top: 0;
+  }
+
+  /* Кнопка внизу + небольшой нормальный зазор от текста */
+  .about-info__text .btn {
+    margin-top: var(--vspace-1);
+    margin-bottom: 0;
+  }
+
+
+/* аккуратные интервалы списка без <br> */
+.about-info__text .about-list {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.about-info__text .about-list li + li {
+  margin-top: var(--vspace-0_75);
+}
+
+/* ABOUT: вернуть цвет текста списка как у обычного текста сайта */
+.about-info__text .about-list,
+.about-info__text .about-list li {
+  color: var(--color-text);
 }

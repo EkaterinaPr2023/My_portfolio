@@ -211,34 +211,28 @@
 
 
    /* Swiper
-    * ------------------------------------------------------ */ 
+ * ------------------------------------------------------ */ 
     const ssSwiper = function() {
 
-        const mySwiper = new Swiper('.swiper-container', {
+        const containers = document.querySelectorAll('.swiper-container');
+        if (!containers.length) return;
 
-            slidesPerView: 1,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                // when window width is > 400px
-                401: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
+        containers.forEach(function(container) {
+            const paginationEl = container.querySelector('.swiper-pagination');
+
+            new Swiper(container, {
+                slidesPerView: 1,
+                pagination: {
+                    el: paginationEl,
+                    clickable: true,
                 },
-                // when window width is > 800px
-                801: {
-                    slidesPerView: 2,
-                    spaceBetween: 32
-                },
-                // when window width is > 1200px
-                1201: {
-                    slidesPerView: 2,
-                    spaceBetween: 80
+                breakpoints: {
+                    401: { slidesPerView: 1, spaceBetween: 20 },
+                    801: { slidesPerView: 2, spaceBetween: 32 },
+                    1201:{ slidesPerView: 2, spaceBetween: 80 }
                 }
-            }
-         });
+            });
+        });
 
     }; // end ssSwiper
 
