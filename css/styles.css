@@ -4478,3 +4478,37 @@ img.u-pull-left {
 .about-info__text .about-list li {
   color: var(--color-text);
 }
+
+
+/* --------------------------------------------------------------
+ * FIX: видимая кнопка закрытия модального окна на мобильных
+ * -------------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+
+    .basicLightbox::after {
+        content: "";
+        position: absolute !important;
+
+        top: var(--vspace-1) !important;
+        right: var(--vspace-1) !important;
+
+        width: var(--vspace-1_25) !important;
+        height: var(--vspace-1_25) !important;
+
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        background-image: url(../images/icons/icon-close.svg) !important;
+        background-position: center !important;
+        background-size: 1.5rem 1.5rem !important;
+        background-repeat: no-repeat !important;
+
+        border-radius: 50%;
+        z-index: 9999 !important;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .basicLightbox::after:hover {
+        background-color: var(--color-body) !important;
+    }
+
+}
