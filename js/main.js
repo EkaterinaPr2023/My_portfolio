@@ -237,7 +237,7 @@
     }; // end ssSwiper
 
 
-   /* Lightbox
+    /* Lightbox
     * ------------------------------------------------------ */
     const ssLightbox = function() {
 
@@ -246,20 +246,49 @@
 
         folioLinks.forEach(function(link) {
             let modalbox = link.getAttribute('href');
-            let instance = basicLightbox.create(
+
+            let instance;
+
+            const escHandler = function(event) {
+                event = event || window.event;
+
+                if (event.key === "Escape" || event.keyCode === 27) {
+                    instance.close();
+                }
+            };
+
+            instance = basicLightbox.create(
                 document.querySelector(modalbox),
                 {
                     onShow: function(instance) {
-                        //detect Escape key press
-                        document.addEventListener("keydown", function(event) {
-                            event = event || window.event;
-                            if (event.keyCode === 27) {
+
+                        document.addEventListener("keydown", escHandler);
+
+                        const modalPopup = instance.element().querySelector('.modal-popup');
+
+                        if (modalPopup && !modalPopup.querySelector('.modal-popup__close')) {
+                            const closeButton = document.createElement('button');
+
+                            closeButton.className = 'modal-popup__close';
+                            closeButton.type = 'button';
+                            closeButton.setAttribute('aria-label', 'Закрыть модальное окно');
+
+                            closeButton.addEventListener('click', function(event) {
+                                event.preventDefault();
+                                event.stopPropagation();
                                 instance.close();
-                            }
-                        });
+                            });
+
+                            modalPopup.appendChild(closeButton);
+                        }
+                    },
+
+                    onClose: function() {
+                        document.removeEventListener("keydown", escHandler);
                     }
                 }
-            )
+            );
+
             modals.push(instance);
         });
 

@@ -4481,34 +4481,60 @@ img.u-pull-left {
 
 
 /* --------------------------------------------------------------
- * FIX: видимая кнопка закрытия модального окна на мобильных
+ * Mobile modal close button
  * -------------------------------------------------------------- */
+
+.modal-popup__close {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
 
+    /* скрываем стандартный крестик basicLightbox */
     .basicLightbox::after {
-        content: "";
-        position: absolute !important;
+        display: none !important;
+    }
 
-        top: var(--vspace-1) !important;
-        right: var(--vspace-1) !important;
+    .modal-popup {
+        position: relative;
+    }
 
-        width: var(--vspace-1_25) !important;
-        height: var(--vspace-1_25) !important;
+    .modal-popup__close {
+        display: block;
 
-        background-color: rgba(0, 0, 0, 0.3) !important;
-        background-image: url(../images/icons/icon-close.svg) !important;
-        background-position: center !important;
-        background-size: 1.5rem 1.5rem !important;
-        background-repeat: no-repeat !important;
+        position: absolute;
+
+        top: var(--vspace-1);
+        right: var(--vspace-1);
+
+        width: 4.8rem;
+        height: 4.8rem;
+
+        border: none;
+        padding: 0;
+        margin: 0;
 
         border-radius: 50%;
-        z-index: 9999 !important;
+
+        background-color: rgba(0, 0, 0, 0.3);
+
+        background-image: url(../images/icons/icon-close.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1.4rem 1.4rem;
+
         cursor: pointer;
-        transition: all 0.3s ease-in-out;
+
+        z-index: 20;
+
+        transition: all 0.3s ease;
     }
 
-    .basicLightbox::after:hover {
-        background-color: var(--color-body) !important;
+    .modal-popup__close:hover,
+    .modal-popup__close:focus {
+        background-color: var(--color-body);
+        outline: none;
+        
     }
-
-}
+    
+    }
